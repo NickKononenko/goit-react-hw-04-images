@@ -7,6 +7,7 @@ const Modal = ({ onEscape, modalToggle, largeImage }) => {
     return () => {
       window.removeEventListener('keydown', onEscape);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
